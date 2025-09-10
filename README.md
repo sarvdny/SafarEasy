@@ -1,11 +1,20 @@
 # SafarEasy
 SafarEasy brings real-time bus tracking! See live bus locations and get accurate ETAs for public transport. Plan your journey with confidence and make your daily safar easy and stress-free. No more guessing, just go!
 
-# Table of Index:
-* [Why We Chose This Problem Statement?](#-Why-We-Chose-This-Problem-Statement?-:)
+## 📖 Table of Contents
 
+* [Why We Chose This Problem Statement?](#why-we-chose-this-problem-statement)
+* [How We Got the Idea](#how-we-got-the-idea)
+* [How the App Works](#how-the-app-works)
+    * [Driver App](#1-driver-app)
+    * [Backend Platform](#2-backend-platform)
+    * [Consumer App](#3-consumer-app)
+    * [Bus Stop Display Boards](#4-bus-stop-display-boards)
+    * [Authority Dashboard](#5-authority-dashboard)
+* [How It Will Help Punjab Transportation](#how-it-will-help-punjab-transportation)
+* [Conclusion](#conclusion)
 
-# Why We Chose This Problem Statement? :
+# Why We Chose This Problem Statement?:
 In recent years, urbanization in Punjab has increased significantly, with smaller cities and tier-2 towns experiencing rapid population growth. While metropolitan cities like Delhi or Mumbai have access to advanced public transport systems equipped with GPS tracking, automated scheduling, and real-time commuter information, smaller cities in Punjab still largely rely on traditional public transport networks. This leads to significant challenges for both commuters and transport authorities.
 Commuters often face unpredictable bus schedules, resulting in wasted time, overcrowding at bus stops, and a general reluctance to use public transport. According to the Urban Mobility India Report 2024, more than 60% of commuters in tier-2 towns experience delays, leading to increased dependence on private vehicles. This has a cascading effect: higher traffic congestion, elevated pollution levels, and increased fuel costs.
 From a systemic perspective, authorities lack visibility into the real-time locations of buses, which makes fleet management, scheduling, and resource allocation inefficient. This inefficiency directly impacts commuter satisfaction, the sustainability of public transport, and the economic productivity of the region.
