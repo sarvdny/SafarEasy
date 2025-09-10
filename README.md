@@ -28,28 +28,28 @@ The QR code system idea came from the need for secure and accurate vehicle ident
 
 # How the App Works
 The system consists of three main components: the Driver App, the Consumer App, and the Backend Platform with ETA calculation and display boards. Here’s a step-by-step explanation of how it functions:
-1. Driver App
+# 1. Driver App
 * Each bus is assigned a QR code containing an encrypted vehicle ID and route information.
 * Before starting the trip, the driver scans this QR code using the app. This automatically verifies the vehicle and route, eliminating manual entry errors.
 * Once verified, the driver taps Start Trip, which triggers real-time GPS tracking.
 * The driver can also stop the trip manually or it automatically ends when the bus reaches the last stop and remains idle for a defined period (e.g., 5 minutes).
 * GPS data is streamed securely to the backend using MQTT over TLS or WebSocket Secure (WSS), ensuring low latency and reliability even in areas with modest network coverage.
-2. Backend Platform
+# 2. Backend Platform
 * The backend receives GPS data from all active buses in real time.
 * Trip Service handles authentication, maps the bus to the correct route, and applies geofencing rules to detect deviations or delays.
 * The ETA Engine, built using a combination of rule-based algorithms and ML models (e.g., XGBoost), calculates estimated arrival times for all stops on the bus’s route.
 * ETAs are continuously updated based on live GPS, traffic conditions from Google Maps API, and historical travel patterns.
 * Redis Cache holds “hot ETAs” for fast access by apps and display boards, while Postgres + PostGIS stores historical telemetry for reporting and analytics.
-3. Consumer App
+# 3. Consumer App
 * Commuters open the app to see a live map showing all buses on their route.
 * They can search by route or stop to see buses passing by their location.
 * Each bus shows an ETA at the upcoming stops, enabling commuters to plan their arrival at the bus stop instead of waiting for indefinite periods.
 * Push notifications alert commuters to delays or arrivals, reducing crowding at stops.
-4. Bus Stop Display Boards
+# 4. Bus Stop Display Boards
 * Installed at major bus stops, these LED/LCD boards automatically display the next bus arrivals at that location.
 * They fetch ETAs via a secure REST API from the backend every 30–60 seconds.
 * This ensures commuters without smartphones can still benefit from real-time updates.
-5. Authority Dashboard
+# 5. Authority Dashboard
 * Transport authorities can access a web dashboard to monitor fleet positions, route performance, and KPIs.
 * Historical and live data help optimize scheduling, reduce delays, and identify peak congestion times.
 * This enables data-driven decision-making and smarter allocation of resources.
