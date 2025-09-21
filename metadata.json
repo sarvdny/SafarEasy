@@ -1,0 +1,6 @@
+
+{
+  "name": "SafarEasy Passenger App",
+  "description": "A PWA for commuters to track buses in real-time, get accurate ETAs, and plan their trips with ease. Designed to be fast, reliable, and accessible, even in low-connectivity situations.",
+  "requestFramePermissions": []
+}
